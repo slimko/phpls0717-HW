@@ -1,14 +1,14 @@
 <?php
-$day = mt_rand(0,8);
+$day = mt_rand(0,9);
+$rabday = range(1,5); //упрощаем поиск для вывода рабочего дня
 
-echo "<p>$day</p>";
+echo "<p>День:$day</p>";
 
 switch ($day) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
+    case 0:
+        echo "Неизвестный день";
+        break;
+    case in_array($day,$rabday):
         echo "Это рабочий день";
         break;
     case 6:
