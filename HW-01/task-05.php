@@ -11,8 +11,7 @@ switch ($day) {
     case in_array($day,$rabday):
         echo "Это рабочий день";
         break;
-    case 6:
-    case 7:
+    case ($day >= 6 && $day <= 7):
         echo "Это выходной день";
         break;
     default:
