@@ -7,4 +7,4 @@ $Pencil = 23;
 $paints = $NumberOfDrawings-$FeltTipPen-$Pencil;
 
 
-print "На школьной выставке $NumberOfDrawings  рисунков. $FeltTipPen из них выполнены фломастерами, $Pencil карандашами, а остальные $paints — красками.";
+print ("На школьной выставке $NumberOfDrawings  рисунков. $FeltTipPen из них выполнены фломастерами, $Pencil карандашами, а остальные $paints — красками.");
