@@ -24,7 +24,8 @@ echo task11($array_str,true);
 
 echo '<hr>';
 echo '<h1>Задание №2</h1>';
+arithmetic(array(15,0,2,5,7,8,9,0),'+');
+echo '<hr>';
+echo '<h1>Задание №3</h1>';
 
-
-
-arithmetic(array(15,0),'+');
+calcEverything('+',4,5,6,7,14.6);
