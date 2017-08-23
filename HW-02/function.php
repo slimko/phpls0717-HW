@@ -45,7 +45,12 @@ function task2(array $arr,$arithmetic= null){
                     $res *= $arr[$i];
                     break;
                 case '/':
+                    if($arr[$i]){
                     $res /= $arr[$i];
+                    }else{
+                        echo 'На ноль делить нельзя';
+                        return;
+                    }
                     break;
                 case '%':
                     $res %= $arr[$i];
@@ -61,9 +66,9 @@ function task2(array $arr,$arithmetic= null){
         }elseif($res === 0){
             echo "Ответ: 0";
         }
-        else{
-            echo 'На ноль делить нельзя!';
-        }
+//        else{
+//            echo 'На ноль делить нельзя!';
+//        }
     }
 }
 
